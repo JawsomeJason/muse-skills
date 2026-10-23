@@ -23,7 +23,7 @@ Decide ownership in this order:
 
 ## Neighboring owners
 
-- A general "grill me" or decision interview outside a gauntlet run belongs to `strategy-room`. `matt-partok-bundled-plugin-for-knowledge-work` runs only when the user selects it by name. Inside a gauntlet brief, this skill's own interview applies.
+- A general "grill me" or decision interview outside a gauntlet run belongs to `strategy-room`. `matt-pocock-knowledge-work` runs only when the user selects it by name. Inside a gauntlet brief, this skill's own interview applies.
 - When another router (for example capability-operator or signal-to-system) hands a request here, that hand-off is final. If the request does not fit either gauntlet edition, say so and name the likely owner once; do not route it back and forth.
 - "Make this really good" without the gauntlet name is not a gauntlet request.
 

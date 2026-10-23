@@ -1,5 +1,5 @@
 {
-  "_note": "Exact 30 public Muse skills. Protected paths are never written by tools/muse_install.py; add each package's legacy in-package state here.",
+  "_note": "Exact 31 public Muse skills. Protected paths are never written by tools/muse_install.py; add each package's legacy in-package state here.",
   "skills": [
     "agent-ops",
     "ai-film-studio",
@@ -18,13 +18,14 @@
     "last30days",
     "loop-observatory",
     "loopkit",
-    "matt-partok-bundled-plugin-for-knowledge-work",
+    "matt-pocock-knowledge-work",
     "model-evaluation-lab",
     "model-prompt-lab",
     "operating-graph",
     "outcome-engine",
     "practice-compiler",
     "proofloop",
+    "release-gate",
     "signal-to-system",
     "skill-eval-loop",
     "strategy-room",

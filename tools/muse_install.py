@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Plan, apply, or roll back a replacement of the 30 public Muse skill packages.
+"""Plan, apply, or roll back a replacement of the 31 public Muse skill packages.
 
 Dry-run by default. The file writes, pre-write journal, backups, atomic replace and
 conflict-aware rollback come from harness-engineering/scripts/harnessctl.py; this
 tool only decides which files may change.
 
 Rules:
-- Only the 30 allowlisted skill folders are considered. Anything else in the
+- Only the 31 allowlisted skill folders are considered. Anything else in the
   installed skills directory (local skills, extra files) is never read or written.
 - An installed file may be replaced only when its hash equals the baseline (the
   release it came from). A local edit, deletion, or unknown file at a release path
@@ -51,8 +51,8 @@ class InstallError(RuntimeError):
 
 def load_policy(path=POLICY):
     policy = json.loads(Path(path).read_text())
-    if len(policy["skills"]) != 30 or len(set(policy["skills"])) != 30:
-        raise InstallError("install policy must list exactly 30 unique skills")
+    if len(policy["skills"]) != 31 or len(set(policy["skills"])) != 31:
+        raise InstallError("install policy must list exactly 31 unique skills")
     if any(not isinstance(name, str) or not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", name)
            for name in policy["skills"]):
         raise InstallError("skill names must be plain lowercase folder names")

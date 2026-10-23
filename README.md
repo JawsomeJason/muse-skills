@@ -33,13 +33,14 @@ Personal voice and runtime state belong outside replaceable package folders. Upg
 | `last30days` | Research recent signals and report coverage, dates and meaningful changes. |
 | `loop-observatory` | Compare recorded loop outcomes without inventing missing telemetry. |
 | `loopkit` | Run bounded, resumable work under a concrete contract and stop conditions. |
-| `matt-partok-bundled-plugin-for-knowledge-work` | Use the explicitly selected Matt workflow for idea-to-delivery knowledge work. |
+| `matt-pocock-knowledge-work` | Use the explicitly selected Matt workflow for idea-to-delivery knowledge work. |
 | `model-evaluation-lab` | Freeze evaluation cases and compare actual model results against stated criteria. |
 | `model-prompt-lab` | Build or migrate model prompts with verified settings and measured evaluation. |
 | `operating-graph` | Execute explicitly requested typed workflow graphs with bounded state transitions. |
 | `outcome-engine` | Turn an objective into bounded work packages and a verified result. |
 | `practice-compiler` | Inspect an authorized session window and stage redacted improvement proposals. |
 | `proofloop` | Execute an explicitly requested bounded task with evidence-based verification. |
+| `release-gate` | Run a standardized pre-merge or pre-install release gate and produce a GO or NO-GO verdict. |
 | `signal-to-system` | Convert selected ideas, evidence or repeated work into a useful artifact. |
 | `skill-eval-loop` | Record real skill evaluations, compare candidates and stage approved repairs. |
 | `strategy-room` | Resolve consequential decisions while skipping questions already settled. |
@@ -63,7 +64,7 @@ skills/<name>/
 
 Use Python 3.10 or later for the collection tools. Read the selected skill's requirements as well; video rendering, browser work and other runtime capabilities are checked separately.
 
-For a first installation, copy a selected `skills/<name>/` folder only when the destination does not exist. For an update, never copy over the installed tree or use a blanket delete/sync. Stage an exact reviewed revision outside `~/workspace/skills/`, then use [the scoped installer](tools/muse_install.py) and its [30-skill policy](tools/install-policy.json). It preserves unlisted local files and skills, the private voice profile, and legacy state.
+For a first installation, copy a selected `skills/<name>/` folder only when the destination does not exist. For an update, never copy over the installed tree or use a blanket delete/sync. Stage an exact reviewed revision outside `~/workspace/skills/`, then use [the scoped installer](tools/muse_install.py) and its [31-skill policy](tools/install-policy.json). It preserves unlisted local files and skills, the private voice profile, and legacy state.
 
 The example commands below run from the staged repository. Substitute absolute paths and the actual installed baseline commit. Keep manifests and backups outside replaceable packages. Generating a manifest is not approval; review that exact manifest and diff before applying.
 
@@ -85,7 +86,7 @@ Freeze the reviewed manifest once at review time and verify its pinned SHA-256 b
 
 The approval reference records authority already given; it does not create authority. Apply requires the reviewed manifest and binds every payload to its approved hash. It backs up changed files and journals recovery before writing. Do not modify source or destination concurrently. Replacing several files is not a single atomic transaction; interrupted work may need recovery.
 
-Verify the pilot's installed hashes, actual catalog discovery, loaded source, and a representative task in a fresh Muse context. Catalog refresh behavior must be observed, not assumed. If that succeeds, plan and apply the remaining collection with a separate backup directory (omit `--only-skill` to include all 30; unchanged files are skipped). No update is complete until the required installed behavior passes.
+Verify the pilot's installed hashes, actual catalog discovery, loaded source, and a representative task in a fresh Muse context. Catalog refresh behavior must be observed, not assumed. If that succeeds, plan and apply the remaining collection with a separate backup directory (omit `--only-skill` to include all 31; unchanged files are skipped). No update is complete until the required installed behavior passes.
 
 For Writing Quality, `bin/voice_state.py status` locates the active voice profile. After approval, `migrate` copies a calibrated legacy profile outside the package and refuses conflicts. Never publish the profile. Practice Compiler and Skill Eval Loop document their state locations and migration separately. Preserve both old and new state during rollback.
 

@@ -22,7 +22,7 @@ These were reviewed against the skills' own descriptions. Each has one owner, an
 
 | Request | Primary | Not selected, and when they do own it |
 |---|---|---|
-| "grill me", "interview me", "pressure-test this decision" with no other named workflow | `strategy-room` | `matt-partok-bundled-plugin-for-knowledge-work` only when the user names Matt, Matt Pocock, or the bundle; `outcome-engine` only inside an Outcome Engine run; `gauntlet-loop` grilling only inside a gauntlet-loop project |
+| "grill me", "interview me", "pressure-test this decision" with no other named workflow | `strategy-room` | `matt-pocock-knowledge-work` only when the user names Matt, Matt Pocock, or the bundle; `outcome-engine` only inside an Outcome Engine run; `gauntlet-loop` grilling only inside a gauntlet-loop project |
 | "run the gauntlet" with a bar to beat or a blind comparison, or existing `.gauntlet/runs/` | `gauntlet` | `gauntlet-loop` |
 | "gauntlet loop", governed workstreams, or existing `.gauntlet/state.json` | `gauntlet-loop` | `gauntlet` |
 | bare "run the gauntlet" with no state and no edition signal | neither yet: ask one choice question | both, until the user picks |

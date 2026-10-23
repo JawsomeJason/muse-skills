@@ -10,7 +10,7 @@ import unittest
 from test_acceptance_guards import module, ROOT
 
 mi = module("tools/muse_install.py", "muse_install")
-SKILLS = [f"s{i:02d}" for i in range(30)]
+SKILLS = [f"s{i:02d}" for i in range(31)]
 
 
 def write(path, text, mode=None):
@@ -169,7 +169,7 @@ class MuseInstall(unittest.TestCase):
         policy = mi.load_policy()
         self.assertEqual(policy["skills"], sorted(p.parent.name for p in (ROOT / "skills").glob("*/SKILL.md")))
         baseline = mi.git_manifest(ROOT, "HEAD", policy)
-        self.assertEqual(sum(k.endswith("/SKILL.md") and k.count("/") == 1 for k in baseline), 30)
+        self.assertEqual(sum(k.endswith("/SKILL.md") and k.count("/") == 1 for k in baseline), 31)
 
 
 if __name__ == "__main__":

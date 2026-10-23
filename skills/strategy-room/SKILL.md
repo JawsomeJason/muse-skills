@@ -1,6 +1,6 @@
 ---
 name: strategy-room
-description: Pressure-test a consequential decision before resources are committed. Use when the user says "grill me", "interview me relentlessly", "pressure-test this", "challenge my assumptions", "what am I missing", "stress test this", "tear this apart", "walk the decision tree", or needs help choosing a path, mapping a large uncertain effort, generating distinct options, ranking rough ideas, matching a job to a candidate, productizing proven work, or producing an evidence-linked recommendation. This is the default owner of general decision interviews and pressure tests, including those phrases when no other skill is named. Routes the work to exactly one decision operation, keeps facts separate from judgment, and ends at a decision record with a named handoff. Never executes. Not for requests that explicitly name Matt or the Matt bundle (matt-partok-bundled-plugin-for-knowledge-work) or explicitly ask to run Outcome Engine end to end (outcome-engine).
+description: Pressure-test a consequential decision before resources are committed. Use when the user says "grill me", "interview me relentlessly", "pressure-test this", "challenge my assumptions", "what am I missing", "stress test this", "tear this apart", "walk the decision tree", or needs help choosing a path, mapping a large uncertain effort, generating distinct options, ranking rough ideas, matching a job to a candidate, productizing proven work, or producing an evidence-linked recommendation. This is the default owner of general decision interviews and pressure tests, including those phrases when no other skill is named. Routes the work to exactly one decision operation, keeps facts separate from judgment, and ends at a decision record with a named handoff. Never executes. Not for requests that explicitly name Matt or the Matt bundle (matt-pocock-knowledge-work) or explicitly ask to run Outcome Engine end to end (outcome-engine).
 ---
 
 # Strategy Room
@@ -39,7 +39,7 @@ Strategy Room is the terminal owner for a generic "grill me", "interview me", "p
 
 | Request | Owner |
 |---|---|
-| Names Matt, Matt Pocock, Matt's flow, or a Matt-prefixed step | `matt-partok-bundled-plugin-for-knowledge-work` |
+| Names Matt, Matt Pocock, Matt's flow, or a Matt-prefixed step | `matt-pocock-knowledge-work` |
 | Asks to run Outcome Engine, or to take an idea through brief, slices, and verified execution | `outcome-engine` |
 | Ranks ideas where a decision, owner, and stakes exist | here, `prioritize` |
 | Ranks a messy idea pile with no decision yet, or names Curiosity Compass or Signal to System | `signal-to-system` (`curiosity-compass`) |
